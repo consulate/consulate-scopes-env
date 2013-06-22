@@ -1,0 +1,29 @@
+{
+  "name": "consulate-scopes-env",
+  "version": "0.1.0",
+  "description": "Load scopes from process.env for consulate",
+  "main": "index.js",
+  "scripts": {
+    "test": "SCOPES=1,2,null,4,5 SCOPES2='6|_|7|8' NODE_ENV=test mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/consulate/consulate-scopes-env"
+  },
+  "keywords": [
+    "consulate",
+    "scopes"
+  ],
+  "author": "Cameron Bytheway <cameron@theflokk.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/consulate/consulate-scopes-env/issues"
+  },
+  "dependencies": {
+    "envs": "~0.1.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0",
+    "should": "~1.2.2"
+  }
+}
