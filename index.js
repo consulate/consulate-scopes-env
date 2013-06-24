@@ -2,7 +2,8 @@
  * Module dependencies
  */
 
-var env = require('envs');
+var env = require('envs')
+  , debug = require('simple-debug')('consulate-scopes-env');
 
 /**
  * Load scopes for consulate from a process.env value
@@ -26,6 +27,7 @@ module.exports = function(options) {
 
   return function(app) {
     app.scopes(function(done) {
+      debug('ns=consulate-scopes-env at=app.scopes scopes-list='+JSON.stringify(JSON.stringify(scopes)));
       done(null, scopes);
     });
   };
