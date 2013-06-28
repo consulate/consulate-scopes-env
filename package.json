@@ -20,7 +20,8 @@
     "url": "https://github.com/consulate/consulate-scopes-env/issues"
   },
   "dependencies": {
-    "envs": "~0.1.1"
+    "envs": "~0.1.1",
+    "simple-debug": "~1.1.0"
   },
   "devDependencies": {
     "mocha": "~1.9.0",
