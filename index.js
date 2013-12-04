@@ -26,7 +26,7 @@ module.exports = function(options) {
     .map(function(scope) { return scope === placeholder ? null : scope });
 
   return function(app) {
-    app.scopes(function(done) {
+    app.getScopes(function(done) {
       debug('ns=consulate-scopes-env at=app.scopes scopes-list='+JSON.stringify(JSON.stringify(scopes)));
       done(null, scopes);
     });
